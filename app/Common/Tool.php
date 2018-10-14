@@ -9,6 +9,8 @@
 namespace App\Common;
 
 
+use Encore\Admin\Grid;
+
 class Tool
 {
 
@@ -34,5 +36,21 @@ class Tool
             'msg'   =>  $msg ? : Codes::$codeMsg[$code],
             'data'  =>  $data
         ]);
+    }
+
+    /**
+     * 列表控件添加时间
+     * @param Grid $grid
+     * @param bool $showCreate
+     * @param bool $showUpdate
+     */
+    public static function listAddData(Grid &$grid, $showCreate = true, $showUpdate = true)
+    {
+        if ($showCreate) {
+            $grid->created_at(trans('common.created_at'));
+        }
+        if ($showUpdate) {
+            $grid->updated_at(trans('common.updated_at'));
+        }
     }
 }

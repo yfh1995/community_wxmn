@@ -12,4 +12,9 @@ Route::group([
 
     $router->get('/', 'HomeController@index');
 
+    //==============================用户管理start===========================================
+
+    $router->resource('/user/user-base-info', 'User\\UserBaseController');
+
+    //==============================用户管理end=============================================
 });

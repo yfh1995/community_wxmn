@@ -17,5 +17,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//登录
-Route::get('/login', 'Auth\\LoginController@login');
+Route::group(['middleware' => 'auth:api'], function () {
+
+    //登录
+    Route::get('/login', 'Auth\\LoginController@login');
+
+});
+

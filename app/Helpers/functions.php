@@ -7,9 +7,8 @@ if (! function_exists('getCurrentAction')) {
      */
     function getCurrentAction()
     {
-        $action = \Illuminate\Support\Facades\Route::current()->getActionName();
+        $action = request()->route()->getActionName();
         list($class, $method) = explode('@', $action);
-        $class = substr(strrchr($class,'\\'),1);
 
         return ['controller' => $class, 'method' => $method];
     }

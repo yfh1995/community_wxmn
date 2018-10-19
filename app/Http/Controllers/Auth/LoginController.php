@@ -23,11 +23,16 @@ class LoginController extends Controller
         return Tool::responseJson(Codes::SUCCESS);
     }
 
-    private function validate($request)
+    private function loginValidate($request)
     {
+        /** @var \Illuminate\Validation\Validator $validator */
         $validator = Validator::make($request->all(), [
             'user'      => 'required|unique:posts|max:255',
             'password'  => 'required',
         ]);
+
+        if ($validator->fails()) {
+            return Tool::responseJson(Codes::COMMON_PARAMS_ERROR, $validator->errors()->all());
+        }
     }
 }

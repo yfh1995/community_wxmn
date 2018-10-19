@@ -11,15 +11,21 @@ namespace App\Common;
 class Codes
 {
     const
-    FAIL            = -1,       //失败
-    SUCCESS         = 0,        //成功
+        FAIL                        = -1,       //失败
+        SUCCESS                     = 0,        //成功
 
-    ABC             = 999999;
+        //公共错误码
+        COMMON_PARAMS_ERROR         = 100000,   //参数异常
+
+        ABC                         = 999999;
 
     public static $codeMsg = [
-        self::FAIL          =>  "失败",
-        self::SUCCESS       =>  "成功",
+        self::FAIL                  =>  "失败",
+        self::SUCCESS               =>  "成功",
 
-        self::ABC           =>  "呵呵"
+        //公共错误码
+        self::COMMON_PARAMS_ERROR   =>  "参数异常",
+
+        self::ABC                   =>  "呵呵"
     ];
 }

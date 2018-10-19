@@ -2,15 +2,15 @@
 Navicat MySQL Data Transfer
 
 Source Server         : localhost
-Source Server Version : 100126
+Source Server Version : 50714
 Source Host           : localhost:3306
 Source Database       : community
 
 Target Server Type    : MYSQL
-Target Server Version : 100126
+Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2018-10-14 16:58:00
+Date: 2018-10-19 18:30:41
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -59,7 +59,7 @@ CREATE TABLE `admin_operation_log` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `admin_operation_log_user_id_index` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=404 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=410 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of admin_operation_log
@@ -467,6 +467,12 @@ INSERT INTO `admin_operation_log` VALUES ('400', '1', 'admin/user/user-base-info
 INSERT INTO `admin_operation_log` VALUES ('401', '1', 'admin/auth/users', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2018-10-14 08:53:27', '2018-10-14 08:53:27');
 INSERT INTO `admin_operation_log` VALUES ('402', '1', 'admin/auth/users', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\",\"_export_\":\"all\"}', '2018-10-14 08:53:29', '2018-10-14 08:53:29');
 INSERT INTO `admin_operation_log` VALUES ('403', '1', 'admin/user/user-base-info', 'GET', '127.0.0.1', '[]', '2018-10-14 08:57:21', '2018-10-14 08:57:21');
+INSERT INTO `admin_operation_log` VALUES ('404', '1', 'admin', 'GET', '127.0.0.1', '[]', '2018-10-19 02:59:58', '2018-10-19 02:59:58');
+INSERT INTO `admin_operation_log` VALUES ('405', '1', 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2018-10-19 03:00:02', '2018-10-19 03:00:02');
+INSERT INTO `admin_operation_log` VALUES ('406', '1', 'admin/auth/menu/9/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2018-10-19 03:01:31', '2018-10-19 03:01:31');
+INSERT INTO `admin_operation_log` VALUES ('407', '1', 'admin/user/user-base-info', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2018-10-19 03:01:48', '2018-10-19 03:01:48');
+INSERT INTO `admin_operation_log` VALUES ('408', '1', 'admin/user/user-base-info', 'GET', '127.0.0.1', '[]', '2018-10-19 09:52:39', '2018-10-19 09:52:39');
+INSERT INTO `admin_operation_log` VALUES ('409', '1', 'admin/user/user-base-info', 'GET', '127.0.0.1', '[]', '2018-10-19 10:18:08', '2018-10-19 10:18:08');
 
 -- ----------------------------
 -- Table structure for admin_permissions
@@ -604,6 +610,49 @@ CREATE TABLE `admin_user_permissions` (
 -- ----------------------------
 
 -- ----------------------------
+-- Table structure for assets
+-- ----------------------------
+DROP TABLE IF EXISTS `assets`;
+CREATE TABLE `assets` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `uid` int(10) unsigned NOT NULL COMMENT '用户id',
+  `imcome` decimal(10,0) unsigned NOT NULL DEFAULT '0' COMMENT '总收入',
+  `expenditure` decimal(10,0) unsigned NOT NULL DEFAULT '0' COMMENT '总支出',
+  `available` decimal(10,0) unsigned NOT NULL DEFAULT '0' COMMENT '可用资金',
+  `frozen` decimal(10,0) unsigned NOT NULL DEFAULT '0' COMMENT '冻结资金',
+  `extraction` decimal(10,0) unsigned NOT NULL DEFAULT '0' COMMENT '提现资金',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uid` (`uid`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='用户资产表';
+
+-- ----------------------------
+-- Records of assets
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for assets_log
+-- ----------------------------
+DROP TABLE IF EXISTS `assets_log`;
+CREATE TABLE `assets_log` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `uid` int(10) unsigned NOT NULL,
+  `type` smallint(5) unsigned NOT NULL COMMENT '资产日志类型',
+  `tradelogid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '引起资产变化的订单id',
+  `price` decimal(10,2) NOT NULL COMMENT '变化的资金额度',
+  `note` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '备注',
+  `user_note` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '用户备注',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='资产日志表';
+
+-- ----------------------------
+-- Records of assets_log
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for migrations
 -- ----------------------------
 DROP TABLE IF EXISTS `migrations`;
@@ -634,6 +683,29 @@ CREATE TABLE `password_resets` (
 
 -- ----------------------------
 -- Records of password_resets
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for recharge
+-- ----------------------------
+DROP TABLE IF EXISTS `recharge`;
+CREATE TABLE `recharge` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `uid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '用户id',
+  `tradelogid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT '订单id',
+  `serial_num` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '流水号',
+  `price` decimal(10,2) unsigned NOT NULL DEFAULT '0.00' COMMENT '充值金额',
+  `status` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '充值状态（0：未确认，1：成功，2：失败，3：已退款）',
+  `pay_platform` smallint(5) unsigned NOT NULL COMMENT '支付平台',
+  `refund_date` datetime NOT NULL COMMENT '退款时间',
+  `created_at` timestamp NOT NULL,
+  `updated_at` timestamp NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `serial_num` (`serial_num`) USING BTREE COMMENT '流水号必须唯一'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='第三方充值表';
+
+-- ----------------------------
+-- Records of recharge
 -- ----------------------------
 
 -- ----------------------------

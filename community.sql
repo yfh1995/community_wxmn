@@ -2,15 +2,15 @@
 Navicat MySQL Data Transfer
 
 Source Server         : localhost
-Source Server Version : 50714
+Source Server Version : 100136
 Source Host           : localhost:3306
 Source Database       : community
 
 Target Server Type    : MYSQL
-Target Server Version : 50714
+Target Server Version : 100136
 File Encoding         : 65001
 
-Date: 2018-10-19 18:30:41
+Date: 2018-10-21 13:17:54
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -59,7 +59,7 @@ CREATE TABLE `admin_operation_log` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `admin_operation_log_user_id_index` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=410 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=427 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of admin_operation_log
@@ -473,6 +473,23 @@ INSERT INTO `admin_operation_log` VALUES ('406', '1', 'admin/auth/menu/9/edit', 
 INSERT INTO `admin_operation_log` VALUES ('407', '1', 'admin/user/user-base-info', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2018-10-19 03:01:48', '2018-10-19 03:01:48');
 INSERT INTO `admin_operation_log` VALUES ('408', '1', 'admin/user/user-base-info', 'GET', '127.0.0.1', '[]', '2018-10-19 09:52:39', '2018-10-19 09:52:39');
 INSERT INTO `admin_operation_log` VALUES ('409', '1', 'admin/user/user-base-info', 'GET', '127.0.0.1', '[]', '2018-10-19 10:18:08', '2018-10-19 10:18:08');
+INSERT INTO `admin_operation_log` VALUES ('410', '1', 'admin', 'GET', '127.0.0.1', '[]', '2018-10-21 01:48:57', '2018-10-21 01:48:57');
+INSERT INTO `admin_operation_log` VALUES ('411', '1', 'admin', 'GET', '127.0.0.1', '[]', '2018-10-21 02:55:30', '2018-10-21 02:55:30');
+INSERT INTO `admin_operation_log` VALUES ('412', '1', 'admin/auth/logout', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2018-10-21 02:55:32', '2018-10-21 02:55:32');
+INSERT INTO `admin_operation_log` VALUES ('413', '1', 'admin', 'GET', '127.0.0.1', '[]', '2018-10-21 03:15:57', '2018-10-21 03:15:57');
+INSERT INTO `admin_operation_log` VALUES ('414', '1', 'admin/user/user-base-info', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2018-10-21 03:38:34', '2018-10-21 03:38:34');
+INSERT INTO `admin_operation_log` VALUES ('415', '1', 'admin/user/user-base-info/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2018-10-21 03:38:37', '2018-10-21 03:38:37');
+INSERT INTO `admin_operation_log` VALUES ('416', '1', 'admin/user/user-base-info/2', 'PUT', '127.0.0.1', '{\"nickname\":\"frontend_yfh\",\"name\":\"\\u6768\\u5bcc\\u704f\",\"email\":\"690828339@qq.com\",\"phone\":\"18227687927\",\"password\":\"$2y$10$tCCJFwAs\\/tyqxWHSD37ecu6fItvVEOg7mvwHYvpEWQX\\/fXJ7IHFBe\",\"password_confirmation\":\"$2y$10$tCCJFwAs\\/tyqxWHSD37ecu6fItvVEOg7mvwHYvpEWQX\\/fXJ7IHFBe\",\"_token\":\"gzOX8P5RxmowbsMglzT6EYOS4fVSq8zkeU07BMhX\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.community.com\\/admin\\/user\\/user-base-info\"}', '2018-10-21 03:39:02', '2018-10-21 03:39:02');
+INSERT INTO `admin_operation_log` VALUES ('417', '1', 'admin/user/user-base-info', 'GET', '127.0.0.1', '[]', '2018-10-21 03:39:02', '2018-10-21 03:39:02');
+INSERT INTO `admin_operation_log` VALUES ('418', '1', 'admin/user/user-base-info/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2018-10-21 03:39:07', '2018-10-21 03:39:07');
+INSERT INTO `admin_operation_log` VALUES ('419', '1', 'admin/auth/setting', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2018-10-21 03:39:28', '2018-10-21 03:39:28');
+INSERT INTO `admin_operation_log` VALUES ('420', '1', 'admin/auth/setting', 'PUT', '127.0.0.1', '{\"name\":\"\\u8d85\\u7ba1\",\"password\":\"$2y$10$F7iTnPgNkzb2FkiUgjTsHe7Nt1eizL5PXNf\\/ul7gGkLi3mLLUAI6C\",\"password_confirmation\":\"$2y$10$F7iTnPgNkzb2FkiUgjTsHe7Nt1eizL5PXNf\\/ul7gGkLi3mLLUAI6C\",\"_token\":\"gzOX8P5RxmowbsMglzT6EYOS4fVSq8zkeU07BMhX\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/www.community.com\\/admin\\/user\\/user-base-info\\/2\\/edit\"}', '2018-10-21 03:39:34', '2018-10-21 03:39:34');
+INSERT INTO `admin_operation_log` VALUES ('421', '1', 'admin/auth/setting', 'GET', '127.0.0.1', '[]', '2018-10-21 03:39:34', '2018-10-21 03:39:34');
+INSERT INTO `admin_operation_log` VALUES ('422', '1', 'admin/auth/setting', 'GET', '127.0.0.1', '[]', '2018-10-21 03:39:36', '2018-10-21 03:39:36');
+INSERT INTO `admin_operation_log` VALUES ('423', '1', 'admin/auth/setting', 'GET', '127.0.0.1', '[]', '2018-10-21 03:40:25', '2018-10-21 03:40:25');
+INSERT INTO `admin_operation_log` VALUES ('424', '1', 'admin/auth/setting', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2018-10-21 03:40:28', '2018-10-21 03:40:28');
+INSERT INTO `admin_operation_log` VALUES ('425', '1', 'admin/user/user-base-info/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2018-10-21 03:40:29', '2018-10-21 03:40:29');
+INSERT INTO `admin_operation_log` VALUES ('426', '1', 'admin/user/user-base-info', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2018-10-21 03:40:30', '2018-10-21 03:40:30');
 
 -- ----------------------------
 -- Table structure for admin_permissions
@@ -591,7 +608,7 @@ CREATE TABLE `admin_users` (
 -- ----------------------------
 -- Records of admin_users
 -- ----------------------------
-INSERT INTO `admin_users` VALUES ('1', 'admin', '$2y$10$F7iTnPgNkzb2FkiUgjTsHe7Nt1eizL5PXNf/ul7gGkLi3mLLUAI6C', '超管', '', null, '2018-10-08 14:42:27', '2018-10-14 08:47:40');
+INSERT INTO `admin_users` VALUES ('1', 'admin', '$2y$10$F7iTnPgNkzb2FkiUgjTsHe7Nt1eizL5PXNf/ul7gGkLi3mLLUAI6C', '超管', '', 'AiDL1ugaMo10QqgllwYy4jLWLMKbspXXIvgk7uKueUU4RVdTda6Zss4ZwpUZ', '2018-10-08 14:42:27', '2018-10-21 03:39:34');
 
 -- ----------------------------
 -- Table structure for admin_user_permissions
@@ -661,7 +678,7 @@ CREATE TABLE `migrations` (
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of migrations
@@ -669,6 +686,112 @@ CREATE TABLE `migrations` (
 INSERT INTO `migrations` VALUES ('1', '2014_10_12_000000_create_users_table', '1');
 INSERT INTO `migrations` VALUES ('2', '2014_10_12_100000_create_password_resets_table', '1');
 INSERT INTO `migrations` VALUES ('3', '2016_01_04_173148_create_admin_tables', '1');
+INSERT INTO `migrations` VALUES ('4', '2016_06_01_000001_create_oauth_auth_codes_table', '2');
+INSERT INTO `migrations` VALUES ('5', '2016_06_01_000002_create_oauth_access_tokens_table', '2');
+INSERT INTO `migrations` VALUES ('6', '2016_06_01_000003_create_oauth_refresh_tokens_table', '2');
+INSERT INTO `migrations` VALUES ('7', '2016_06_01_000004_create_oauth_clients_table', '2');
+INSERT INTO `migrations` VALUES ('8', '2016_06_01_000005_create_oauth_personal_access_clients_table', '2');
+
+-- ----------------------------
+-- Table structure for oauth_access_tokens
+-- ----------------------------
+DROP TABLE IF EXISTS `oauth_access_tokens`;
+CREATE TABLE `oauth_access_tokens` (
+  `id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `client_id` int(11) NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `scopes` text COLLATE utf8mb4_unicode_ci,
+  `revoked` tinyint(1) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `expires_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `oauth_access_tokens_user_id_index` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ----------------------------
+-- Records of oauth_access_tokens
+-- ----------------------------
+INSERT INTO `oauth_access_tokens` VALUES ('96cb2e968bbc73d5b96ce0855b3bb4cc3059cdcc64c21c4df323e7c6f3facf785f39fd9f8719e484', '3', '1', 'MyApp', '[]', '0', '2018-10-21 05:02:54', '2018-10-21 05:02:54', '2019-10-21 05:02:54');
+
+-- ----------------------------
+-- Table structure for oauth_auth_codes
+-- ----------------------------
+DROP TABLE IF EXISTS `oauth_auth_codes`;
+CREATE TABLE `oauth_auth_codes` (
+  `id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `client_id` int(11) NOT NULL,
+  `scopes` text COLLATE utf8mb4_unicode_ci,
+  `revoked` tinyint(1) NOT NULL,
+  `expires_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ----------------------------
+-- Records of oauth_auth_codes
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for oauth_clients
+-- ----------------------------
+DROP TABLE IF EXISTS `oauth_clients`;
+CREATE TABLE `oauth_clients` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `secret` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `redirect` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `personal_access_client` tinyint(1) NOT NULL,
+  `password_client` tinyint(1) NOT NULL,
+  `revoked` tinyint(1) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `oauth_clients_user_id_index` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ----------------------------
+-- Records of oauth_clients
+-- ----------------------------
+INSERT INTO `oauth_clients` VALUES ('1', null, 'Laravel Personal Access Client', 'UeHOwm0oVopkXhB7Ypmv5n4388uVvyugNSoeeq6U', 'http://localhost', '1', '0', '0', '2018-10-21 03:41:32', '2018-10-21 03:41:32');
+INSERT INTO `oauth_clients` VALUES ('2', null, 'Laravel Password Grant Client', 'Mze6oovHWRKr7v8JPGaF4TxKFQRYYfBXP8AmMjEV', 'http://localhost', '0', '1', '0', '2018-10-21 03:41:32', '2018-10-21 03:41:32');
+
+-- ----------------------------
+-- Table structure for oauth_personal_access_clients
+-- ----------------------------
+DROP TABLE IF EXISTS `oauth_personal_access_clients`;
+CREATE TABLE `oauth_personal_access_clients` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `client_id` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `oauth_personal_access_clients_client_id_index` (`client_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ----------------------------
+-- Records of oauth_personal_access_clients
+-- ----------------------------
+INSERT INTO `oauth_personal_access_clients` VALUES ('1', '1', '2018-10-21 03:41:32', '2018-10-21 03:41:32');
+
+-- ----------------------------
+-- Table structure for oauth_refresh_tokens
+-- ----------------------------
+DROP TABLE IF EXISTS `oauth_refresh_tokens`;
+CREATE TABLE `oauth_refresh_tokens` (
+  `id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `access_token_id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `revoked` tinyint(1) NOT NULL,
+  `expires_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `oauth_refresh_tokens_access_token_id_index` (`access_token_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ----------------------------
+-- Records of oauth_refresh_tokens
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for password_resets
@@ -698,8 +821,8 @@ CREATE TABLE `recharge` (
   `status` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '充值状态（0：未确认，1：成功，2：失败，3：已退款）',
   `pay_platform` smallint(5) unsigned NOT NULL COMMENT '支付平台',
   `refund_date` datetime NOT NULL COMMENT '退款时间',
-  `created_at` timestamp NOT NULL,
-  `updated_at` timestamp NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`id`),
   UNIQUE KEY `serial_num` (`serial_num`) USING BTREE COMMENT '流水号必须唯一'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='第三方充值表';
@@ -727,9 +850,10 @@ CREATE TABLE `users` (
   UNIQUE KEY `users_email_unique` (`email`),
   UNIQUE KEY `users_nickname_unique` (`nickname`) USING BTREE,
   UNIQUE KEY `users_phone_unique` (`phone`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO `users` VALUES ('2', 'frontend_yfh', '杨富灏', '690828339@qq.com', '18227687927', 'images/48ee3a58ff8511e58f92a088785c95dc.jpeg', '$2y$10$tCCJFwAs/tyqxWHSD37ecu6fItvVEOg7mvwHYvpEWQX/fXJ7IHFBe', null, '2018-10-14 08:52:40', '2018-10-14 08:52:40');
+INSERT INTO `users` VALUES ('2', 'yfh1', '杨富灏', '690828339@qq.com', '18227687927', 'images/93eaa31676f73611f3fad41e8c84a8a1.jpeg', '$2y$10$tCCJFwAs/tyqxWHSD37ecu6fItvVEOg7mvwHYvpEWQX/fXJ7IHFBe', null, '2018-10-14 08:52:40', '2018-10-21 03:39:02');
+INSERT INTO `users` VALUES ('3', 'yfh2', '杨富灏', '690828338@qq.com', '18227687926', '/img/user2-160x160.jpg', '$2y$10$T.7ENEIEBemMxJrFOfKWBeA.SvZnL0uwUa5L83pW3Hh5zkZrcf9Za', null, '2018-10-21 05:02:54', '2018-10-21 05:02:54');

@@ -13,14 +13,23 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
 
-Route::group(['middleware' => 'auth:api'], function () {
+Route::prefix('user')->namespace('Auth')->group(function () {
 
     //登录
-    Route::get('/login', 'Auth\\LoginController@login');
+    Route::get('/login', 'LoginController@login');
+    //注冊
+    Route::post('/register', 'LoginController@register');
 
+    Route::group(['middleware' => 'auth:api'], function () {
+
+        //获取用户信息
+        Route::get('/getUserInfo', 'LoginController@getUserInfo');
+
+    });
 });
+
 

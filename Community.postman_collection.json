@@ -1,0 +1,118 @@
+{
+	"id": "f80eecde-8a70-e3ec-2339-115d080b006a",
+	"name": "Community",
+	"description": "",
+	"order": [
+		"4cb199e7-eacc-3daa-0f66-79e36d7d65dc",
+		"f63ddf59-d762-38f8-4c6a-4394f2681908"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1540098940538,
+	"owner": "2572162",
+	"public": false,
+	"requests": [
+		{
+			"id": "4cb199e7-eacc-3daa-0f66-79e36d7d65dc",
+			"headers": "",
+			"headerData": [],
+			"url": "www.community.com/api/user/register",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "f80eecde-8a70-e3ec-2339-115d080b006a",
+			"data": [
+				{
+					"key": "name",
+					"value": "杨富灏",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nickname",
+					"value": "yfh2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "690828338@qq.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone",
+					"value": "18227687926",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "111111",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "c_password",
+					"value": "111111",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "注册",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1540098957545,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "f63ddf59-d762-38f8-4c6a-4394f2681908",
+			"headers": "//Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijk2Y2IyZTk2OGJiYzczZDViOTZjZTA4NTViM2JiNGNjMzA1OWNkY2M2NGMyMWM0ZGYzMjNlN2M2ZjNmYWNmNzg1ZjM5ZmQ5Zjg3MTllNDg0In0.eyJhdWQiOiIxIiwianRpIjoiOTZjYjJlOTY4YmJjNzNkNWI5NmNlMDg1NWIzYmI0Y2MzMDU5Y2RjYzY0YzIxYzRkZjMyM2U3YzZmM2ZhY2Y3ODVmMzlmZDlmODcxOWU0ODQiLCJpYXQiOjE1NDAwOTgxNzQsIm5iZiI6MTU0MDA5ODE3NCwiZXhwIjoxNTcxNjM0MTc0LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.LULj875Bzc65uwNRwdzpZ9J8i5wXsI0jOTgIY2aMOKZFcbozUA10a0qCTkK365jcFdp9noMLrSFbzt5PYOP8rODRDunm2vUKWwK6iNBhWuN4iY9GX7Pha3Rg2r1jtXsTNv6Epk3OFirdzUQO4dy88K9AxeRvPWLTVtx-ncuFZ2PMiAp7O_ApBwkUxnghJUsM6g4lElP_W6S3N1E2gOze5yYf2V4PHMEh6KRyWE5LWuE_Gadrx6V-2QajxSak5u8d1r1gZl99KJyH9s3c9AMR0aULsrMBAxM2PJETrH5XTSjJMuJZZnhHbEMggqXfUdQ3FcPji5dFt627oN4cCuBjeKQePx1ojDpZ2kpuxMDvHmzTzGRy1X1syNA9VSTV-YOxRzXwDGuOjudBrIV3GRDqmIt4X0gK4Xn1rtwRXz5cUEkcO8owrDkYTJLl5-Ke8QdnHWl7ylJgS3dXJa8dOvensy8fQ0HwOzHga39_8JdeI-X0xmexZvHWL7QeM8321hMqIKqXhcVkfYt4arloqwseyvRs_bOLnReCVpUBHf2WkyANfiEYhw5H-FALIlgsgjbdMarFesKH-8djxmgSfuBtAtvJMXZ8jxmNuEdoGVXrl8PzCdPCjM41g1fsT2T5o8fDJJHn4gIyT5YzA3K5S8HQ76HWE1bn-FatxKgYapbAnmc\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijk2Y2IyZTk2OGJiYzczZDViOTZjZTA4NTViM2JiNGNjMzA1OWNkY2M2NGMyMWM0ZGYzMjNlN2M2ZjNmYWNmNzg1ZjM5ZmQ5Zjg3MTllNDg0In0.eyJhdWQiOiIxIiwianRpIjoiOTZjYjJlOTY4YmJjNzNkNWI5NmNlMDg1NWIzYmI0Y2MzMDU5Y2RjYzY0YzIxYzRkZjMyM2U3YzZmM2ZhY2Y3ODVmMzlmZDlmODcxOWU0ODQiLCJpYXQiOjE1NDAwOTgxNzQsIm5iZiI6MTU0MDA5ODE3NCwiZXhwIjoxNTcxNjM0MTc0LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.LULj875Bzc65uwNRwdzpZ9J8i5wXsI0jOTgIY2aMOKZFcbozUA10a0qCTkK365jcFdp9noMLrSFbzt5PYOP8rODRDunm2vUKWwK6iNBhWuN4iY9GX7Pha3Rg2r1jtXsTNv6Epk3OFirdzUQO4dy88K9AxeRvPWLTVtx-ncuFZ2PMiAp7O_ApBwkUxnghJUsM6g4lElP_W6S3N1E2gOze5yYf2V4PHMEh6KRyWE5LWuE_Gadrx6V-2QajxSak5u8d1r1gZl99KJyH9s3c9AMR0aULsrMBAxM2PJETrH5XTSjJMuJZZnhHbEMggqXfUdQ3FcPji5dFt627oN4cCuBjeKQePx1ojDpZ2kpuxMDvHmzTzGRy1X1syNA9VSTV-YOxRzXwDGuOjudBrIV3GRDqmIt4X0gK4Xn1rtwRXz5cUEkcO8owrDkYTJLl5-Ke8QdnHWl7ylJgS3dXJa8dOvensy8fQ0HwOzHga39_8JdeI-X0xmexZvHWL7QeM8321hMqIKqXhcVkfYt4arloqwseyvRs_bOLnReCVpUBHf2WkyANfiEYhw5H-FALIlgsgjbdMarFesKH-8djxmgSfuBtAtvJMXZ8jxmNuEdoGVXrl8PzCdPCjM41g1fsT2T5o8fDJJHn4gIyT5YzA3K5S8HQ76HWE1bn-FatxKgYapbAnmc",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "www.community.com/api/user/getUserInfo",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f80eecde-8a70-e3ec-2339-115d080b006a",
+			"data": null,
+			"dataMode": "params",
+			"name": "获取用户信息",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1540098968298,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

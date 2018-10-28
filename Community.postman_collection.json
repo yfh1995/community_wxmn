@@ -1,10 +1,11 @@
 {
-	"id": "f80eecde-8a70-e3ec-2339-115d080b006a",
-	"name": "Community",
+	"id": "7f41bc8d-03c1-e074-857f-d31d05c76a5d",
+	"name": "Community copy",
 	"description": "",
 	"order": [
-		"4cb199e7-eacc-3daa-0f66-79e36d7d65dc",
-		"f63ddf59-d762-38f8-4c6a-4394f2681908"
+		"c4ca1efd-7cd6-8c6d-fb6c-92fe04ff7b0e",
+		"c7464410-cc82-2ed0-e56e-f998392b92a9",
+		"65057a84-70b0-41b7-3c51-83e60664ca90"
 	],
 	"folders": [],
 	"folders_order": [],
@@ -13,7 +14,44 @@
 	"public": false,
 	"requests": [
 		{
-			"id": "4cb199e7-eacc-3daa-0f66-79e36d7d65dc",
+			"id": "65057a84-70b0-41b7-3c51-83e60664ca90",
+			"headers": "//Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijk2Y2IyZTk2OGJiYzczZDViOTZjZTA4NTViM2JiNGNjMzA1OWNkY2M2NGMyMWM0ZGYzMjNlN2M2ZjNmYWNmNzg1ZjM5ZmQ5Zjg3MTllNDg0In0.eyJhdWQiOiIxIiwianRpIjoiOTZjYjJlOTY4YmJjNzNkNWI5NmNlMDg1NWIzYmI0Y2MzMDU5Y2RjYzY0YzIxYzRkZjMyM2U3YzZmM2ZhY2Y3ODVmMzlmZDlmODcxOWU0ODQiLCJpYXQiOjE1NDAwOTgxNzQsIm5iZiI6MTU0MDA5ODE3NCwiZXhwIjoxNTcxNjM0MTc0LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.LULj875Bzc65uwNRwdzpZ9J8i5wXsI0jOTgIY2aMOKZFcbozUA10a0qCTkK365jcFdp9noMLrSFbzt5PYOP8rODRDunm2vUKWwK6iNBhWuN4iY9GX7Pha3Rg2r1jtXsTNv6Epk3OFirdzUQO4dy88K9AxeRvPWLTVtx-ncuFZ2PMiAp7O_ApBwkUxnghJUsM6g4lElP_W6S3N1E2gOze5yYf2V4PHMEh6KRyWE5LWuE_Gadrx6V-2QajxSak5u8d1r1gZl99KJyH9s3c9AMR0aULsrMBAxM2PJETrH5XTSjJMuJZZnhHbEMggqXfUdQ3FcPji5dFt627oN4cCuBjeKQePx1ojDpZ2kpuxMDvHmzTzGRy1X1syNA9VSTV-YOxRzXwDGuOjudBrIV3GRDqmIt4X0gK4Xn1rtwRXz5cUEkcO8owrDkYTJLl5-Ke8QdnHWl7ylJgS3dXJa8dOvensy8fQ0HwOzHga39_8JdeI-X0xmexZvHWL7QeM8321hMqIKqXhcVkfYt4arloqwseyvRs_bOLnReCVpUBHf2WkyANfiEYhw5H-FALIlgsgjbdMarFesKH-8djxmgSfuBtAtvJMXZ8jxmNuEdoGVXrl8PzCdPCjM41g1fsT2T5o8fDJJHn4gIyT5YzA3K5S8HQ76HWE1bn-FatxKgYapbAnmc\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijk2Y2IyZTk2OGJiYzczZDViOTZjZTA4NTViM2JiNGNjMzA1OWNkY2M2NGMyMWM0ZGYzMjNlN2M2ZjNmYWNmNzg1ZjM5ZmQ5Zjg3MTllNDg0In0.eyJhdWQiOiIxIiwianRpIjoiOTZjYjJlOTY4YmJjNzNkNWI5NmNlMDg1NWIzYmI0Y2MzMDU5Y2RjYzY0YzIxYzRkZjMyM2U3YzZmM2ZhY2Y3ODVmMzlmZDlmODcxOWU0ODQiLCJpYXQiOjE1NDAwOTgxNzQsIm5iZiI6MTU0MDA5ODE3NCwiZXhwIjoxNTcxNjM0MTc0LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.LULj875Bzc65uwNRwdzpZ9J8i5wXsI0jOTgIY2aMOKZFcbozUA10a0qCTkK365jcFdp9noMLrSFbzt5PYOP8rODRDunm2vUKWwK6iNBhWuN4iY9GX7Pha3Rg2r1jtXsTNv6Epk3OFirdzUQO4dy88K9AxeRvPWLTVtx-ncuFZ2PMiAp7O_ApBwkUxnghJUsM6g4lElP_W6S3N1E2gOze5yYf2V4PHMEh6KRyWE5LWuE_Gadrx6V-2QajxSak5u8d1r1gZl99KJyH9s3c9AMR0aULsrMBAxM2PJETrH5XTSjJMuJZZnhHbEMggqXfUdQ3FcPji5dFt627oN4cCuBjeKQePx1ojDpZ2kpuxMDvHmzTzGRy1X1syNA9VSTV-YOxRzXwDGuOjudBrIV3GRDqmIt4X0gK4Xn1rtwRXz5cUEkcO8owrDkYTJLl5-Ke8QdnHWl7ylJgS3dXJa8dOvensy8fQ0HwOzHga39_8JdeI-X0xmexZvHWL7QeM8321hMqIKqXhcVkfYt4arloqwseyvRs_bOLnReCVpUBHf2WkyANfiEYhw5H-FALIlgsgjbdMarFesKH-8djxmgSfuBtAtvJMXZ8jxmNuEdoGVXrl8PzCdPCjM41g1fsT2T5o8fDJJHn4gIyT5YzA3K5S8HQ76HWE1bn-FatxKgYapbAnmc",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "www.community.com/api/user/getUserInfo",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "7f41bc8d-03c1-e074-857f-d31d05c76a5d",
+			"data": null,
+			"dataMode": "params",
+			"name": "获取用户信息",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1540098968298,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "7f41bc8d-03c1-e074-857f-d31d05c76a5d"
+		},
+		{
+			"id": "c4ca1efd-7cd6-8c6d-fb6c-92fe04ff7b0e",
 			"headers": "",
 			"headerData": [],
 			"url": "www.community.com/api/user/register",
@@ -22,7 +60,7 @@
 			"pathVariableData": [],
 			"preRequestScript": null,
 			"method": "POST",
-			"collectionId": "f80eecde-8a70-e3ec-2339-115d080b006a",
+			"collectionId": "7f41bc8d-03c1-e074-857f-d31d05c76a5d",
 			"data": [
 				{
 					"key": "name",
@@ -76,38 +114,26 @@
 			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"collection_id": "7f41bc8d-03c1-e074-857f-d31d05c76a5d"
 		},
 		{
-			"id": "f63ddf59-d762-38f8-4c6a-4394f2681908",
-			"headers": "//Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijk2Y2IyZTk2OGJiYzczZDViOTZjZTA4NTViM2JiNGNjMzA1OWNkY2M2NGMyMWM0ZGYzMjNlN2M2ZjNmYWNmNzg1ZjM5ZmQ5Zjg3MTllNDg0In0.eyJhdWQiOiIxIiwianRpIjoiOTZjYjJlOTY4YmJjNzNkNWI5NmNlMDg1NWIzYmI0Y2MzMDU5Y2RjYzY0YzIxYzRkZjMyM2U3YzZmM2ZhY2Y3ODVmMzlmZDlmODcxOWU0ODQiLCJpYXQiOjE1NDAwOTgxNzQsIm5iZiI6MTU0MDA5ODE3NCwiZXhwIjoxNTcxNjM0MTc0LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.LULj875Bzc65uwNRwdzpZ9J8i5wXsI0jOTgIY2aMOKZFcbozUA10a0qCTkK365jcFdp9noMLrSFbzt5PYOP8rODRDunm2vUKWwK6iNBhWuN4iY9GX7Pha3Rg2r1jtXsTNv6Epk3OFirdzUQO4dy88K9AxeRvPWLTVtx-ncuFZ2PMiAp7O_ApBwkUxnghJUsM6g4lElP_W6S3N1E2gOze5yYf2V4PHMEh6KRyWE5LWuE_Gadrx6V-2QajxSak5u8d1r1gZl99KJyH9s3c9AMR0aULsrMBAxM2PJETrH5XTSjJMuJZZnhHbEMggqXfUdQ3FcPji5dFt627oN4cCuBjeKQePx1ojDpZ2kpuxMDvHmzTzGRy1X1syNA9VSTV-YOxRzXwDGuOjudBrIV3GRDqmIt4X0gK4Xn1rtwRXz5cUEkcO8owrDkYTJLl5-Ke8QdnHWl7ylJgS3dXJa8dOvensy8fQ0HwOzHga39_8JdeI-X0xmexZvHWL7QeM8321hMqIKqXhcVkfYt4arloqwseyvRs_bOLnReCVpUBHf2WkyANfiEYhw5H-FALIlgsgjbdMarFesKH-8djxmgSfuBtAtvJMXZ8jxmNuEdoGVXrl8PzCdPCjM41g1fsT2T5o8fDJJHn4gIyT5YzA3K5S8HQ76HWE1bn-FatxKgYapbAnmc\n",
-			"headerData": [
-				{
-					"key": "Accept",
-					"value": "application/json",
-					"description": "",
-					"enabled": false
-				},
-				{
-					"key": "Authorization",
-					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijk2Y2IyZTk2OGJiYzczZDViOTZjZTA4NTViM2JiNGNjMzA1OWNkY2M2NGMyMWM0ZGYzMjNlN2M2ZjNmYWNmNzg1ZjM5ZmQ5Zjg3MTllNDg0In0.eyJhdWQiOiIxIiwianRpIjoiOTZjYjJlOTY4YmJjNzNkNWI5NmNlMDg1NWIzYmI0Y2MzMDU5Y2RjYzY0YzIxYzRkZjMyM2U3YzZmM2ZhY2Y3ODVmMzlmZDlmODcxOWU0ODQiLCJpYXQiOjE1NDAwOTgxNzQsIm5iZiI6MTU0MDA5ODE3NCwiZXhwIjoxNTcxNjM0MTc0LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.LULj875Bzc65uwNRwdzpZ9J8i5wXsI0jOTgIY2aMOKZFcbozUA10a0qCTkK365jcFdp9noMLrSFbzt5PYOP8rODRDunm2vUKWwK6iNBhWuN4iY9GX7Pha3Rg2r1jtXsTNv6Epk3OFirdzUQO4dy88K9AxeRvPWLTVtx-ncuFZ2PMiAp7O_ApBwkUxnghJUsM6g4lElP_W6S3N1E2gOze5yYf2V4PHMEh6KRyWE5LWuE_Gadrx6V-2QajxSak5u8d1r1gZl99KJyH9s3c9AMR0aULsrMBAxM2PJETrH5XTSjJMuJZZnhHbEMggqXfUdQ3FcPji5dFt627oN4cCuBjeKQePx1ojDpZ2kpuxMDvHmzTzGRy1X1syNA9VSTV-YOxRzXwDGuOjudBrIV3GRDqmIt4X0gK4Xn1rtwRXz5cUEkcO8owrDkYTJLl5-Ke8QdnHWl7ylJgS3dXJa8dOvensy8fQ0HwOzHga39_8JdeI-X0xmexZvHWL7QeM8321hMqIKqXhcVkfYt4arloqwseyvRs_bOLnReCVpUBHf2WkyANfiEYhw5H-FALIlgsgjbdMarFesKH-8djxmgSfuBtAtvJMXZ8jxmNuEdoGVXrl8PzCdPCjM41g1fsT2T5o8fDJJHn4gIyT5YzA3K5S8HQ76HWE1bn-FatxKgYapbAnmc",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "www.community.com/api/user/getUserInfo",
+			"id": "c7464410-cc82-2ed0-e56e-f998392b92a9",
+			"headers": "",
+			"headerData": [],
+			"url": "www.community.com/api/user/login",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
 			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "f80eecde-8a70-e3ec-2339-115d080b006a",
+			"method": "POST",
+			"collectionId": "7f41bc8d-03c1-e074-857f-d31d05c76a5d",
 			"data": null,
 			"dataMode": "params",
-			"name": "获取用户信息",
+			"name": "登录",
 			"description": "",
 			"descriptionFormat": "html",
-			"time": 1540098968298,
+			"time": 1540708018094,
 			"version": 2,
 			"responses": [],
 			"tests": null,

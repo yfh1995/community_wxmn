@@ -39,6 +39,28 @@ class Tool
     }
 
     /**
+     * 自定义服务统一相应格式
+     * @param int $code
+     * @param array $data
+     * @return array
+     */
+    public static function responseFromServer($code = Codes::FAIL, $data = [])
+    {
+        if (!is_array($data)) {
+            $data = [$data];
+        }
+
+        if (!in_array($code, array_keys(Codes::$codeMsg))) {
+            $code = Codes::FAIL;
+        }
+
+        return [
+            'code'  =>  $code,
+            'data'  =>  $data
+        ];
+    }
+
+    /**
      * 列表控件添加时间
      * @param Grid $grid
      * @param bool $showCreate

@@ -17,18 +17,20 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 
-Route::prefix('user')->namespace('Auth')->group(function () {
+Route::prefix('user')->group(function () {
 
-    //登录
-    Route::get('/login', 'LoginController@login');
-    //注冊
-    Route::post('/register', 'LoginController@register');
-
-    Route::group(['middleware' => 'auth:api'], function () {
+    Route::namespace('User')->middleware('auth:api')->group(function () {
 
         //获取用户信息
-        Route::get('/getUserInfo', 'LoginController@getUserInfo');
+        Route::get('/getUserInfo', 'UserInfoController@getUserInfo');
+    });
 
+    Route::namespace('Auth')->group(function () {
+
+        //登录
+        Route::get('/login', 'LoginController@login');
+        //注冊
+        Route::post('/register', 'LoginController@register');
     });
 });
 

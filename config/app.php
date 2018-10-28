@@ -15,6 +15,8 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'name_en' => env('APP_NAME', 'community'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -177,6 +179,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /**
+         * 自定义服务
+         */
+        //用户认证
+        App\Providers\CAuthProvider::class,
     ],
 
     /*
@@ -226,6 +233,11 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        /**
+         * 自定义服务门面
+         */
+        //用户认证
+        'CAuth' => \App\Facades\CAuth::class,
     ],
 
 ];

@@ -1,58 +1,66 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+## 文档
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+#### 目录结构
 
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Pulse Storm](http://www.pulsestorm.net/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+ | -  -  app  
+ | -  - | -  - Admin                                                后台系统  
+ | -  - | -  - | -  - Controllers                                   后台控制器  
+ | -  - | -  - | -  - routes.php                                    后台路由配置  
+ |  
+ | -  - | -  - Common  
+ | -  - | -  - | -  - Codes.php                                     统一错误码  
+ | -  - | -  - | -  - Tool.php                                      工具方法（仅限于逻辑处理，请勿包含业务）  
+ |  
+ | -  - | -  - Console                                              定时任务  
+ | -  - | -  - Exceptions                                           报错类  
+ | -  - | -  - Helpers  
+ | -  - | -  - | -  - functions.php                                 全局方法  
+ |  
+ | -  - | -  - Http    
+ | -  - | -  - | -  - Controllers                                   控制器  
+ | -  - | -  - | -  - Middleware                                    中间件  
+ |  
+ | -  - | -  - Providers                                            服务提供者（插件与自定义服务绑定）  
+ | -  - | -  - Services                                             自定义服务实体（所有服务请带前缀C）  
+ |  
+ | -  -  bootstrap  
+ | -  - | -  - cache  
+ |      
+ | -  -  config  
+ | -  - | -  - admin.php                                            后台配置文件        
+ | -  - | -  - app.php                                              网站基础及服务、门面注册配置        
+ | -  - | -  - auth.php                                             认证相关配置      
+ | -  - | -  - broadcasting.php           
+ | -  - | -  - cache.php                                            数据缓存配置（file、redis、memcache等）  
+ | -  - | -  - database.php                                         数据库配置      
+ | -  - | -  - filesystems.php                                      文件系统配置      
+ | -  - | -  - mail.php                                             邮件配置      
+ | -  - | -  - queue.php                                            队列配置      
+ | -  - | -  - services.php  
+ | -  - | -  - session.php                                          session      
+ | -  - | -  - view.php                                             视图配置   
+ |       
+ | -  -  database  
+ | -  - | -  - factories   
+ | -  - | -  - migrations                                           数据库迁移（未使用）  
+ | -  - | -  - seeds                                                数据填充（未使用）  
+ |   
+ | -  -  public  
+ | -  - | -  - index.php                                            入口文件   
+ |  
+ | -  -  resources  
+ | -  - | -  - assets                                               前端资源文件夹  
+ | -  - | -  - lang                                                 多语言文件  
+ | -  - | -  - view                                                 前端视图文件  
+ |  
+ | -  -  routes                                                     路由配置  
+ |  
+ | -  -  storage                                                    日志、缓存文件  
+ |  
+ | -  -  tests  
+ |  
+ | -  -  vendor                                                     框架文件  
+ |  
+ | -  -  .env                                                       快速配置文件  
+ | -  -  Community.postman_collection.json                          postman接口实例文件  
+ | -  -  community.sql                                              数据库文件  

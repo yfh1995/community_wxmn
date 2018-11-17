@@ -75,4 +75,26 @@ class Tool
             $grid->updated_at(trans('common.updated_at'));
         }
     }
+
+    /**
+     * 检验字符串是否为邮箱
+     * @param $str
+     * @return bool
+     */
+    public static function isEmail($str)
+    {
+        $preg_email='/^[a-zA-Z0-9]+([-_.][a-zA-Z0-9]+)*@([a-zA-Z0-9]+[-.])+([a-z]{2,5})$/ims';
+        return preg_match($preg_email,$str) ? true : false;
+    }
+
+    /**
+     * 检验字符串是否为邮箱
+     * @param $str
+     * @return bool
+     */
+    public static function isPhone($str)
+    {
+        $preg_phone='/^1[34578]\d{9}$/ims';
+        return preg_match($preg_phone,$str) ? true : false;
+    }
 }

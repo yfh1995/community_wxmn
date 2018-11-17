@@ -1,11 +1,12 @@
 {
-	"id": "7f41bc8d-03c1-e074-857f-d31d05c76a5d",
-	"name": "Community copy",
+	"id": "05ee012d-b863-b249-d470-755468cc2ed5",
+	"name": "Community",
 	"description": "",
 	"order": [
-		"c4ca1efd-7cd6-8c6d-fb6c-92fe04ff7b0e",
-		"c7464410-cc82-2ed0-e56e-f998392b92a9",
-		"65057a84-70b0-41b7-3c51-83e60664ca90"
+		"4fb3bd9b-524d-b1a2-4150-cc3956f9da45",
+		"2f727b33-1a0e-a6b3-236c-c7928c0061ef",
+		"1f551ecb-73d9-26f8-2088-b82e3d3130d3",
+		"51332fe8-eccc-dab0-fe1a-8d1d402b588a"
 	],
 	"folders": [],
 	"folders_order": [],
@@ -14,7 +15,7 @@
 	"public": false,
 	"requests": [
 		{
-			"id": "65057a84-70b0-41b7-3c51-83e60664ca90",
+			"id": "1f551ecb-73d9-26f8-2088-b82e3d3130d3",
 			"headers": "//Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6Ijk2Y2IyZTk2OGJiYzczZDViOTZjZTA4NTViM2JiNGNjMzA1OWNkY2M2NGMyMWM0ZGYzMjNlN2M2ZjNmYWNmNzg1ZjM5ZmQ5Zjg3MTllNDg0In0.eyJhdWQiOiIxIiwianRpIjoiOTZjYjJlOTY4YmJjNzNkNWI5NmNlMDg1NWIzYmI0Y2MzMDU5Y2RjYzY0YzIxYzRkZjMyM2U3YzZmM2ZhY2Y3ODVmMzlmZDlmODcxOWU0ODQiLCJpYXQiOjE1NDAwOTgxNzQsIm5iZiI6MTU0MDA5ODE3NCwiZXhwIjoxNTcxNjM0MTc0LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.LULj875Bzc65uwNRwdzpZ9J8i5wXsI0jOTgIY2aMOKZFcbozUA10a0qCTkK365jcFdp9noMLrSFbzt5PYOP8rODRDunm2vUKWwK6iNBhWuN4iY9GX7Pha3Rg2r1jtXsTNv6Epk3OFirdzUQO4dy88K9AxeRvPWLTVtx-ncuFZ2PMiAp7O_ApBwkUxnghJUsM6g4lElP_W6S3N1E2gOze5yYf2V4PHMEh6KRyWE5LWuE_Gadrx6V-2QajxSak5u8d1r1gZl99KJyH9s3c9AMR0aULsrMBAxM2PJETrH5XTSjJMuJZZnhHbEMggqXfUdQ3FcPji5dFt627oN4cCuBjeKQePx1ojDpZ2kpuxMDvHmzTzGRy1X1syNA9VSTV-YOxRzXwDGuOjudBrIV3GRDqmIt4X0gK4Xn1rtwRXz5cUEkcO8owrDkYTJLl5-Ke8QdnHWl7ylJgS3dXJa8dOvensy8fQ0HwOzHga39_8JdeI-X0xmexZvHWL7QeM8321hMqIKqXhcVkfYt4arloqwseyvRs_bOLnReCVpUBHf2WkyANfiEYhw5H-FALIlgsgjbdMarFesKH-8djxmgSfuBtAtvJMXZ8jxmNuEdoGVXrl8PzCdPCjM41g1fsT2T5o8fDJJHn4gIyT5YzA3K5S8HQ76HWE1bn-FatxKgYapbAnmc\n",
 			"headerData": [
 				{
@@ -36,7 +37,7 @@
 			"pathVariableData": [],
 			"preRequestScript": null,
 			"method": "GET",
-			"collectionId": "7f41bc8d-03c1-e074-857f-d31d05c76a5d",
+			"collectionId": "05ee012d-b863-b249-d470-755468cc2ed5",
 			"data": null,
 			"dataMode": "params",
 			"name": "获取用户信息",
@@ -48,19 +49,55 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"collection_id": "7f41bc8d-03c1-e074-857f-d31d05c76a5d"
+			"collection_id": "05ee012d-b863-b249-d470-755468cc2ed5"
 		},
 		{
-			"id": "c4ca1efd-7cd6-8c6d-fb6c-92fe04ff7b0e",
+			"id": "2f727b33-1a0e-a6b3-236c-c7928c0061ef",
+			"headers": "",
+			"headerData": [],
+			"url": "www.community.com/api/user/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "user",
+					"value": "yfh2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "111111",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1542445379081,
+			"name": "登录",
+			"description": "",
+			"collectionId": "05ee012d-b863-b249-d470-755468cc2ed5",
+			"responses": []
+		},
+		{
+			"id": "4fb3bd9b-524d-b1a2-4150-cc3956f9da45",
 			"headers": "",
 			"headerData": [],
 			"url": "www.community.com/api/user/register",
 			"queryParams": [],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "POST",
-			"collectionId": "7f41bc8d-03c1-e074-857f-d31d05c76a5d",
 			"data": [
 				{
 					"key": "name",
@@ -71,21 +108,21 @@
 				},
 				{
 					"key": "nickname",
-					"value": "yfh2",
+					"value": "yfh3",
 					"description": "",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "email",
-					"value": "690828338@qq.com",
+					"value": "690828337@qq.com",
 					"description": "",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "phone",
-					"value": "18227687926",
+					"value": "18227687925",
 					"description": "",
 					"type": "text",
 					"enabled": true
@@ -106,34 +143,40 @@
 				}
 			],
 			"dataMode": "params",
-			"name": "注册",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1540098957545,
 			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"collection_id": "7f41bc8d-03c1-e074-857f-d31d05c76a5d"
+			"time": 1542449203755,
+			"name": "注册",
+			"description": "",
+			"collectionId": "05ee012d-b863-b249-d470-755468cc2ed5",
+			"responses": []
 		},
 		{
-			"id": "c7464410-cc82-2ed0-e56e-f998392b92a9",
-			"headers": "",
-			"headerData": [],
-			"url": "www.community.com/api/user/login",
+			"id": "51332fe8-eccc-dab0-fe1a-8d1d402b588a",
+			"headers": "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjFhOWE4ZjJiMTJhMjA4MzQwNDNiZGQ0NGE0YTRkMTY2NWY0MTNjY2UxZWNiMzdmMDgyZTk2YjI2ZjI0ZGZiYjE5NTc5ZGMxZjVhMmVmYTIxIn0.eyJhdWQiOiIxIiwianRpIjoiMWE5YThmMmIxMmEyMDgzNDA0M2JkZDQ0YTRhNGQxNjY1ZjQxM2NjZTFlY2IzN2YwODJlOTZiMjZmMjRkZmJiMTk1NzlkYzFmNWEyZWZhMjEiLCJpYXQiOjE1NDI0NDQwOTksIm5iZiI6MTU0MjQ0NDA5OSwiZXhwIjoxNTczOTgwMDk5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.D5biIV4VNAo5rIqDSrMBOwyill_3eX2oUCKDpEex6zfsSiYoWyEuisUUUraFltTgxxiq_-vHI1uNk2AlYvXyYsR08pZD2sxSsSeTOS8v6Gq1HyHk0Kk6vraxGkYeZLZLHG3A9Z9VsWDqx9HrXIALBxZnTmgJsn9w9gN1w_h9gUft0aVbdCjaYF51xCtQu4cqRJP7NGwCRJW0F6tlP5PrIvp-EaagV8PEzpZSZptuSGI-T4cm_ELfrltKYyrHWBEOcjFnbX85wiIA3t5O20lfCLq8kNXezLikeCGIpgPWbRYh8RhggmC14xDfNmxjqGiniTgu_uLTnQYhmC4FOH7E72VF0wWhlr6X5T29Kf75Pcw1ptEtSEqIasbJKWvGIPR-E3jCvDAxoMhKilScquhe0Aujyvzu0Jq_h2CqFaj7HVzjGS9tdx5VgY4KzfpFUYPf1EFi1qkXd-fK6AwyhChUYO6J6zPV8298xZg07RoHxkaY-HIw0d2BUq314y6QNySU2VRXogJ9JvxE7WBqzFPGxGK1tIRBhuhxkImGbl3PfX6rGMO-txASp7JG70EaUdtgq5Kmixv9y9kcTq1LsNLc3iImxWJgyzBLUW3A4RC6VaLRT76kMnNYjaKK9NKoJ_Zx5hYAIZZwRuqL125n5wxSzWOE0LXbL2PDEvtnh4BWTcM\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjFhOWE4ZjJiMTJhMjA4MzQwNDNiZGQ0NGE0YTRkMTY2NWY0MTNjY2UxZWNiMzdmMDgyZTk2YjI2ZjI0ZGZiYjE5NTc5ZGMxZjVhMmVmYTIxIn0.eyJhdWQiOiIxIiwianRpIjoiMWE5YThmMmIxMmEyMDgzNDA0M2JkZDQ0YTRhNGQxNjY1ZjQxM2NjZTFlY2IzN2YwODJlOTZiMjZmMjRkZmJiMTk1NzlkYzFmNWEyZWZhMjEiLCJpYXQiOjE1NDI0NDQwOTksIm5iZiI6MTU0MjQ0NDA5OSwiZXhwIjoxNTczOTgwMDk5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.D5biIV4VNAo5rIqDSrMBOwyill_3eX2oUCKDpEex6zfsSiYoWyEuisUUUraFltTgxxiq_-vHI1uNk2AlYvXyYsR08pZD2sxSsSeTOS8v6Gq1HyHk0Kk6vraxGkYeZLZLHG3A9Z9VsWDqx9HrXIALBxZnTmgJsn9w9gN1w_h9gUft0aVbdCjaYF51xCtQu4cqRJP7NGwCRJW0F6tlP5PrIvp-EaagV8PEzpZSZptuSGI-T4cm_ELfrltKYyrHWBEOcjFnbX85wiIA3t5O20lfCLq8kNXezLikeCGIpgPWbRYh8RhggmC14xDfNmxjqGiniTgu_uLTnQYhmC4FOH7E72VF0wWhlr6X5T29Kf75Pcw1ptEtSEqIasbJKWvGIPR-E3jCvDAxoMhKilScquhe0Aujyvzu0Jq_h2CqFaj7HVzjGS9tdx5VgY4KzfpFUYPf1EFi1qkXd-fK6AwyhChUYO6J6zPV8298xZg07RoHxkaY-HIw0d2BUq314y6QNySU2VRXogJ9JvxE7WBqzFPGxGK1tIRBhuhxkImGbl3PfX6rGMO-txASp7JG70EaUdtgq5Kmixv9y9kcTq1LsNLc3iImxWJgyzBLUW3A4RC6VaLRT76kMnNYjaKK9NKoJ_Zx5hYAIZZwRuqL125n5wxSzWOE0LXbL2PDEvtnh4BWTcM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "www.community.com/api/user/logout",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
 			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "7f41bc8d-03c1-e074-857f-d31d05c76a5d",
+			"method": "GET",
+			"collectionId": "05ee012d-b863-b249-d470-755468cc2ed5",
 			"data": null,
 			"dataMode": "params",
-			"name": "登录",
+			"name": "登出",
 			"description": "",
 			"descriptionFormat": "html",
-			"time": 1540708018094,
+			"time": 1542445369898,
 			"version": 2,
 			"responses": [],
 			"tests": null,

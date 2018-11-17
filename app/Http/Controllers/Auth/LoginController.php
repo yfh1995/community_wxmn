@@ -37,7 +37,7 @@ class LoginController extends Controller
 
         $res = CAuth::login($params);
 
-        return Tool::responseJson($res['code'], $res['token'] ? : []);
+        return Tool::responseJson($res['code'], $res['data']['token'] ? : []);
     }
 
     public function logout()
@@ -53,10 +53,14 @@ class LoginController extends Controller
 
         $res = CAuth::register($params);
 
-        return Tool::responseJson($res['code'], $res['token'] ? : []);
+        return Tool::responseJson($res['code'], $res['data']['token'] ? : []);
     }
 
-
+    /**
+     * 登录参数验证
+     * @param $request
+     * @return bool|\Illuminate\Http\JsonResponse
+     */
     public static function loginValidate($request)
     {
         /** @var \Illuminate\Validation\Validator $validator */
@@ -72,6 +76,11 @@ class LoginController extends Controller
         return true;
     }
 
+    /**
+     * 注册参数验证
+     * @param $request
+     * @return bool|\Illuminate\Http\JsonResponse
+     */
     public static function registerValidate($request)
     {
         /** @var \Illuminate\Validation\Validator $validator */

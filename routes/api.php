@@ -28,7 +28,9 @@ Route::prefix('user')->group(function () {
     Route::namespace('Auth')->group(function () {
 
         //登录
-        Route::get('/login', 'LoginController@login');
+        Route::post('/login', 'LoginController@login');
+        //登录
+        Route::get('/logout', 'LoginController@logout');
         //注冊
         Route::post('/register', 'LoginController@register');
     });

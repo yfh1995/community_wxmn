@@ -56,4 +56,10 @@ class User extends Authenticatable
 
         return asset($this->defaultAvatar);
     }
+
+    public function isExistByConditions($conditions)
+    {
+        $user = User::where($conditions)->get();
+        return !$user->isEmpty();
+    }
 }
